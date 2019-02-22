@@ -212,7 +212,7 @@ input:placeholder-shown  + label {
 <div class="login-wrapper">
   <div class="login-left">
     <img src="https://images.wallpaperscraft.com/image/tree_fog_nature_beautiful_84257_1920x1080.jpg">
-    <div class="h1">Enter send to E-mail</div>
+    <div class="h1">Enter to Send Email</div>
   </div>
   <form action="/Send_to_email" method="POST">
   @csrf
