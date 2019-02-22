@@ -33,7 +33,7 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background: linear-gradient(243.87deg, #F28FE5 30.6%, #371933 130.6%);
+  background: url('https://images.wallpaperscraft.com/image/line_background_bright_stripes_44001_2560x1600.jpg');
   overflow: hidden;
 }
 
@@ -101,6 +101,7 @@ input:placeholder-shown  + label {
   text-align: center;
   cursor: pointer;
   position: absolute;
+  background-color: HotPink;
 }
 
 .open .h1 {
@@ -117,8 +118,8 @@ input:placeholder-shown  + label {
 }
 
 .login-wrapper {
-  width: 800px;
-  height: 440px;
+  width: 960px;
+  height: 540px;
   background-color: #fff;
   box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -171,66 +172,6 @@ input:placeholder-shown  + label {
           transform: translateX(0px) translateZ(0);
 }
 
-.checkbox-container {
-  display: flex;
-  margin-top: 35px;
-}
-
-.text-checkbox {
-  color: #aaa; 
-  font-size: 16px;
-  letter-spacing: -0.00933333em;
-  font-weight: 300;
-  margin-left: 15px;
-}
-
-input[type="checkbox"] {
-  cursor: pointer;
-  margin: 0;
-  height: 22px;
-  position: relative;
-  width: 22px;
-  -webkit-appearance: none;
-  transition: all 180ms linear;
-}
-
-input[type="checkbox"]:before {
-    border: 1px solid #aaa;
-    background-color: #fff;
-    content: '';
-    width: 20px;
-    height: 20px;
-    display: block;
-    border-radius: 2px;
-    transition: all 180ms linear;
-}
-
-input[type="checkbox"]:checked:before {
-  background: linear-gradient(198.08deg, #B4458C 45.34%, #E281E7 224.21%);
-  border: 1px solid #C359AA;
-}
-
-input[type="checkbox"]:after {
-  content: '';
-  border: 2px solid #fff;
-  border-right: 0;
-  border-top: 0;
-  display: block;
-  height: 4px;
-  left: 4px;
-  opacity: 0;
-  position: absolute;
-  top: 6px;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  width: 12px;
-  transition: all 180ms linear;
-}
-
-input[type="checkbox"]:checked:after {
-    opacity: 1;
-} 
-
 .button-area {
   display: flex;
   justify-content: space-between;
@@ -270,7 +211,7 @@ input[type="checkbox"]:checked:after {
 
 <div class="login-wrapper">
   <div class="login-left">
-    <img src="http://res.cloudinary.com/dzqowkhxu/image/upload/v1513679279/bg-login_bxxfkf.png">
+    <img src="https://images.wallpaperscraft.com/image/tree_fog_nature_beautiful_84257_1920x1080.jpg">
     <div class="h1">Enter send to E-mail</div>
   </div>
   <form action="/Send_to_email" method="POST">
@@ -286,16 +227,9 @@ input[type="checkbox"]:checked:after {
       <input name = "Email" type="text"  placeholder="Email">
       <label for="Email">Email</label>    
     </div>
-    <div class="form-group">
-      <input name = "Messager"type="text"  placeholder="Messager">
-      <label for="Password">Message</label>    
-    </div>
-    <div class="checkbox-container">
-      <input type="checkbox">
-      <div class="text-checkbox">LAB 3SB03:Framework I (Laravel)</div>
-    </div> 
+    <textarea class="form-group" name="Messager" cols="48" rows="8" id="Messager" placeholder="Messager"></textarea>
     <div class="button-area">
-      <button class="btn btn-primary">Enter</button>
+      <button class="btn btn-primary">Send</button>
     </div>
   </div>
   </form>

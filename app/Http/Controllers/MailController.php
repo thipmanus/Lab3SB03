@@ -18,7 +18,7 @@ class MailController extends Controller {
         );
         Mail::send('Test_mail', $data, function($message) use($request) 
       {
-         $message->to($request->input('Email'), $request->input('Subject'))->subject($request->input('Messager'));
+         $message->to($request->input('Email'), $request->input('Messager'))->subject($request->input('Subject'));
          $message->from('5910110148@psu.ac.th','Thipmanus rattananupong');
 
       });
